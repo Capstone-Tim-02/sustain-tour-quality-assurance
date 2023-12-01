@@ -15,7 +15,7 @@ public class DeleteWisata {
 
     @Step("Admin input valid endpoint to delete wisata")
     public String setPostApiEndpointForValidDeleteWisata(){
-        return url + "admin/wisata/81";
+        return url + "admin/wisata/82";
     }
 
     @Step("Admin request with the HTTP method DELETE and input valid wisata ID in the request body")

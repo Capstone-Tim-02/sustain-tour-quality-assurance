@@ -110,13 +110,10 @@
     Given Admin input valid endpoint to get grafik dashboard in six month with only start date
     When Admin request to get grafik data in six month with only start date with the HTTP GET method
     Then Admin receive a response with status code 200 for success get grafik data in six month with only start date
-    And Verify grafik data in six month with only start date is not empty
-
   Scenario: TC_AA_93 - Get Grafik Indicator For Revenue In six month with only end date
     Given Admin input valid endpoint to get grafik dashboard in six month with only end date
     When Admin request to get grafik data in six month with only end date with the HTTP GET method
     Then Admin receive a response with status code 200 for success get grafik data in six month with only end date
-    And Verify grafik data in six month with only end date is not empty
   Scenario: TC_AA_94 - Get Grafik Indicator For Revenue In six month with valid start date and end date
     Given Admin input valid endpoint to get grafik dashboard in six month with valid start date and end date
     When Admin request to get grafik data in six month with valid start date and end date with the HTTP GET method

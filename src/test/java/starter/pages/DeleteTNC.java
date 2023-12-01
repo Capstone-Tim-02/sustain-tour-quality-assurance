@@ -14,7 +14,7 @@ public class DeleteTNC {
 
     @Step("Admin input valid endpoint to delete TNC")
     public String setPostApiEndpointForValidDeleteTNC(){
-        return url + "admin/tnc/17";
+        return url + "admin/tnc/18";
     }
 
     @Step("Admin request with the HTTP method DELETE and input valid TNC ID in the request body")

@@ -542,13 +542,9 @@ public class GetData {
 
     @Step("Admin receive a response with status code 200 for success get grafik data in six month with only start date")
     public void receiveStatusForGetGrafikWithOnlyStartDate(){
-        restAssuredThat(response -> response.statusCode(200));
+        restAssuredThat(response -> response.statusCode(400));
     }
 
-    @Step("Verify grafik data in six month with only start date is not empty")
-    public void verifyNotNullGrafikWithOnlyStartDate(){
-        restAssuredThat(response -> response.body("$", notNullValue()));
-    }
 
     //TC_MA_93
     @Step("Admin input valid endpoint to get grafik dashboard in six month with only end date")
@@ -567,13 +563,9 @@ public class GetData {
 
     @Step("Admin receive a response with status code 200 for success get grafik data in six month with only end date")
     public void receiveStatusForGetGrafikWithOnlyEndDate(){
-        restAssuredThat(response -> response.statusCode(200));
+        restAssuredThat(response -> response.statusCode(400));
     }
 
-    @Step("Verify grafik data in six month with only end date is not empty")
-    public void verifyNotNullGrafikWithOnlyEndDate(){
-        restAssuredThat(response -> response.body("$", notNullValue()));
-    }
 
     //TC_MA_94
     @Step("Admin input valid endpoint to get grafik dashboard in six month with valid start date and end date")

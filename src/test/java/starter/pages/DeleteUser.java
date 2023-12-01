@@ -14,7 +14,7 @@ public class DeleteUser {
 
     @Step("Admin input valid endpoint to delete user")
     public String setPostApiEndpointForValidDeleteUser(){
-        return url + "admin/user/89";
+        return url + "admin/user/107";
     }
 
     @Step("Admin request with the HTTP method DELETE and input valid user ID in the request body")

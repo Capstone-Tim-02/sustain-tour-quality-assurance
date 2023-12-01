@@ -297,8 +297,8 @@ public class CreateWisata {
 
         SerenityRest.given()
                 .contentType("multipart/form-data")
-                .multiPart("title", "Museum Jawa Timur")
-                .multiPart("kode", "MJJ")
+                .multiPart("title", "Museum Kupu Kupu")
+                .multiPart("kode", "MKK")
                 .multiPart("location", "Jawa Timur")
                 .multiPart("kota", "malang")
                 .multiPart("description", "Museum yang terletak di kota Malang")

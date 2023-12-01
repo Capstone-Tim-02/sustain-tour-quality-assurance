@@ -13,7 +13,7 @@ public class EditUser {
     //TC_MA_81
     @Step("Admin input valid endpoint to edit users")
     public String setPostApiEndpointEditUser(){
-        return url + "admin/user/89";
+        return url + "admin/user/88";
     }
 
     @Step("Admin request with the HTTP method PUT and input valid user ID")
@@ -53,7 +53,7 @@ public class EditUser {
     //TC_MA_82
     @Step("Admin input valid endpoint to edit user with used username")
     public String setPostApiEndpointEditUserWithUsedUsername(){
-        return url + "admin/user/89";
+        return url + "admin/user/88";
     }
 
     @Step("Admin request with the HTTP method PUT and input valid user ID and used username")
@@ -94,7 +94,7 @@ public class EditUser {
     //TC_MA_83
     @Step("Admin input valid endpoint to edit user with used email")
     public String setPostApiEndpointEditUserWithUsedEmail(){
-        return url + "admin/user/89";
+        return url + "admin/user/88";
     }
 
     @Step("Admin request with the HTTP method PUT and input valid user ID and used email")
@@ -135,7 +135,7 @@ public class EditUser {
     //TC_MA_84
     @Step("Admin input valid endpoint to edit user with used phone")
     public String setPostApiEndpointEditUserWithUsedPhone(){
-        return url + "admin/user/89";
+        return url + "admin/user/88";
     }
 
     @Step("Admin request with the HTTP method PUT and input valid user ID and used phone")

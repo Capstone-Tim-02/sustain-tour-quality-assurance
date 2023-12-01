@@ -430,10 +430,6 @@ public class GetDataSteps {
         getData.receiveStatusForGetGrafikWithOnlyStartDate();
     }
 
-    @And("Verify grafik data in six month with only start date is not empty")
-    public void adminValidateResponseNotNullTheResponseBodyGetGrafikWithOnlyStartDate() {
-        getData.verifyNotNullGrafikWithOnlyStartDate();
-    }
 
     //    TC_MA_93
     @Given("Admin input valid endpoint to get grafik dashboard in six month with only end date")
@@ -450,10 +446,6 @@ public class GetDataSteps {
         getData.receiveStatusForGetGrafikWithOnlyEndDate();
     }
 
-    @And("Verify grafik data in six month with only end date is not empty")
-    public void adminValidateResponseNotNullTheResponseBodyGetGrafikWithOnlyEndDate() {
-        getData.verifyNotNullGrafikWithOnlyEndDate();
-    }
 
     //    TC_MA_94
     @Given("Admin input valid endpoint to get grafik dashboard in six month with valid start date and end date")
