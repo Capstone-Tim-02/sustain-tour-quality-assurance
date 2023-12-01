@@ -145,9 +145,9 @@ public class CreatePromo {
 
         SerenityRest.given()
                 .contentType("multipart/form-data")
-                .multiPart("title", "NEWYEAREVE")
-                .multiPart("nama_promo", "NEWYEAREVE")
-                .multiPart("kode_voucher", "NEWYEAREVE")
+                .multiPart("title", "CHRISTMASHOLIDAY")
+                .multiPart("nama_promo", "CHRISTMASHOLIDAY")
+                .multiPart("kode_voucher", "CHRISTMASHOLIDAY")
                 .multiPart("jumlah_potongan_persen", 15)
                 .multiPart("status_aktif", true)
                 .multiPart("tanggal_kadaluarsa", "2023-12-12")
