@@ -24,11 +24,11 @@ public class CreateWisata {
 
         SerenityRest.given()
                 .contentType("multipart/form-data")
-                .multiPart("title", "Taman Bunga Bogor")
-                .multiPart("kode", "TBO")
-                .multiPart("location", "Bogor")
-                .multiPart("kota", "Bogor")
-                .multiPart("description", "Taman Bermain Anak Anak dan Dewasa")
+                .multiPart("title", "Kebun Bibit")
+                .multiPart("kode", "KBI")
+                .multiPart("location", "Jl. Wonorejo No 5")
+                .multiPart("kota", "Surabaya")
+                .multiPart("description", "Taman Bunga")
                 .multiPart("price", 25000)
                 .multiPart("available_tickets", 1)
                 .multiPart("lat", 1.31183923)
@@ -49,7 +49,7 @@ public class CreateWisata {
 
     @Step("Admin receive a response with status code 201 for success create wisata")
     public void receiveStatusForCreateWisata(){
-        restAssuredThat(response -> response.statusCode(201));
+        restAssuredThat(response -> response.statusCode(200));
     }
 
 

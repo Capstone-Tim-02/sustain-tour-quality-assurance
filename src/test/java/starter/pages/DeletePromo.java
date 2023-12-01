@@ -14,7 +14,7 @@ public class DeletePromo {
 
     @Step("Admin input valid endpoint to delete promo")
     public String setPostApiEndpointForValidDeletePromo(){
-        return url + "admin/promo/82";
+        return url + "admin/promo/85";
     }
 
     @Step("Admin request with the HTTP method DELETE and input valid promo ID in the request body")

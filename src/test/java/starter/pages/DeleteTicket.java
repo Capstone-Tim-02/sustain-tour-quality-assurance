@@ -14,7 +14,7 @@ public class DeleteTicket {
 
     @Step("Admin input valid endpoint to delete ticket")
     public String setPostApiEndpointForValidDeleteTicket(){
-        return url + "admin/ticket/1701415049-381";
+        return url + "admin/ticket/1701415048-844";
     }
 
     @Step("Admin request with the HTTP method DELETE and input valid ticket ID in the request body")
