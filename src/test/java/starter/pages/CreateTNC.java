@@ -20,7 +20,7 @@ public class CreateTNC {
     @Step("Admin request with the HTTP method POST and input valid TNC credentials on the request body")
     public void sendPostHttpRequestForCreateTNC(){;
         JSONObject requestBody = new JSONObject();
-        requestBody.put("tnc_name", "Pembelian Tiket Taman Bermain");
+        requestBody.put("tnc_name", "Pembelian Tiket untuk Taman Bermain");
         requestBody.put("description", "Untuk Pembelian tiket taman, user diharuskan login dan mengisi identitas diri");
 
         SerenityRest

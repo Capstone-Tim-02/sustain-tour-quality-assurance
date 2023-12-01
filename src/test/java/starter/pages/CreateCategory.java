@@ -41,7 +41,7 @@ public class CreateCategory {
     @Step("Admin request with the HTTP method POST and input used category nama in the request body")
     public void sendPostHttpRequestForCreateUsedCategory(){;
         JSONObject requestBody = new JSONObject();
-        requestBody.put("category_name", "halodek");
+        requestBody.put("category_name", "Taman Bermain");
 
         SerenityRest
                 .given()

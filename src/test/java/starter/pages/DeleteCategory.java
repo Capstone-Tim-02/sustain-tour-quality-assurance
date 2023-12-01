@@ -14,7 +14,7 @@ public class DeleteCategory {
 
     @Step("Admin input valid endpoint to delete category")
     public String setPostApiEndpointForValidDeleteCategory(){
-        return url + "admin/categories/139";
+        return url + "admin/categories/136";
     }
 
     @Step("Admin request with the HTTP method DELETE and input valid category ID in the request body")
