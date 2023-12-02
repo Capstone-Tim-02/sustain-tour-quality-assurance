@@ -2,9 +2,13 @@ name: Capstone Group 2 - Penerapan CI/CD API User
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
+      - Penerapan_CICD_API
   pull_request:
-    branches: [ master ]
+    branches:
+      - master
+      - Penerapan_CICD_API
 
 jobs:
   build:
