@@ -102,8 +102,8 @@ public class User_Register {
         requestBody.put("username", "putrishn27345");
         requestBody.put("password", "siahaan123");
         requestBody.put("confirm_password", "siahaan123");
-        requestBody.put("email", "ruthputri13531@gmail.com");
-        requestBody.put("phone_number", "085260892703");
+        requestBody.put("email", "ruthputri135@gmail.com");
+        requestBody.put("phone_number", "085260892700");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(userInputValidEndpointToCreateAccount());
     }
