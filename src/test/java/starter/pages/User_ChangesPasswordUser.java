@@ -26,7 +26,7 @@ public class User_ChangesPasswordUser {
 
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .contentType("application/json")
                 .body(requestBody.toString())
                 .put(userInputValidEndpointWithValidIDToChangesPassword()).then().statusCode(200);
@@ -61,6 +61,7 @@ public class User_ChangesPasswordUser {
 
     @Step("User request HTTP method PUT and input valid current and new password in the request body and click Send Button")
     public void userRequestWithTheHTTPMethodPUTAndInputInvalidIDToChangesPassword(){
+
         JSONObject requestBody = new JSONObject();
         requestBody.put("currentPassword", "siahaan123");
         requestBody.put("newPassword", "siahaan12345");
@@ -68,7 +69,7 @@ public class User_ChangesPasswordUser {
 
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .contentType("application/json")
                 .body(requestBody.toString())
                 .put(userInputValidEndpointWithInvalidIDToChangesPassword()).then().statusCode(403);    }
@@ -95,6 +96,7 @@ public class User_ChangesPasswordUser {
 
     @Step("User request HTTP method PUT and input invalid current password in the request body and click Send Button")
     public void userRequestWithTheHTTPMethodPUTAndInputInvalidCurrentPasswordToChangesPassword(){
+
         JSONObject requestBody = new JSONObject();
         requestBody.put("currentPassword", "putri123");
         requestBody.put("newPassword", "siahaan1234567");
@@ -102,7 +104,7 @@ public class User_ChangesPasswordUser {
 
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .contentType("application/json")
                 .body(requestBody.toString())
                 .put(userInputValidEndpointWithValidIDToChangesPassword()).then().statusCode(401);
@@ -133,6 +135,7 @@ public class User_ChangesPasswordUser {
 
     @Step("User request HTTP method PUT and input invalid new and confirm password in the request body and click Send Button")
     public void userRequestWithTheHTTPMethodPUTAndInputInvalidNewPassword(){
+
         JSONObject requestBody = new JSONObject();
         requestBody.put("currentPassword", "siahaan12345");
         requestBody.put("newPassword", "s");
@@ -140,7 +143,7 @@ public class User_ChangesPasswordUser {
 
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .contentType("application/json")
                 .body(requestBody.toString())
                 .put(userInputValidEndpointWithValidIDToChangesPassword()).then().statusCode(400);
@@ -172,6 +175,7 @@ public class User_ChangesPasswordUser {
 
     @Step("User request HTTP method PUT and input invalid confirm password in the request body and click Send Button")
     public void userRequestWithTheHTTPMethodPUTAndInputInvalidConfirmPassword(){
+
         JSONObject requestBody = new JSONObject();
         requestBody.put("currentPassword", "siahaan12345");
         requestBody.put("newPassword", "siahaan123");
@@ -179,7 +183,7 @@ public class User_ChangesPasswordUser {
 
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .contentType("application/json")
                 .body(requestBody.toString())
                 .put(userInputValidEndpointWithValidIDToChangesPassword()).then().statusCode(400);
@@ -211,13 +215,14 @@ public class User_ChangesPasswordUser {
 
     @Step("User request HTTP method PUT and did not input current password in the request body and click Send Button")
     public void userRequestWithTheHTTPMethodPUTAndDidNotInputCurrentPassword(){
+
         JSONObject requestBody = new JSONObject();
         requestBody.put("newPassword", "siahaan270302");
         requestBody.put("confirmPassword", "siahaan270302");
 
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .contentType("application/json")
                 .body(requestBody.toString())
                 .put(userInputValidEndpointWithValidIDToChangesPassword()).then().statusCode(401);
@@ -245,13 +250,14 @@ public class User_ChangesPasswordUser {
 
     @Step("User request HTTP method PUT and did not input new password in the request body and click Send Button")
     public void userRequestWithTheHTTPMethodPUTAndDidNotInputNewPassword(){
+
         JSONObject requestBody = new JSONObject();
         requestBody.put("currentPassword", "siahaan12345");
         requestBody.put("confirmPassword", "siahaan123");
 
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .contentType("application/json")
                 .body(requestBody.toString())
                 .put(userInputValidEndpointWithValidIDToChangesPassword()).then().statusCode(400);
@@ -288,13 +294,14 @@ public class User_ChangesPasswordUser {
 
     @Step("User request HTTP method PUT and did not input confirm password in the request body and click Send Button")
     public void userRequestWithTheHTTPMethodPUTAndDidNotInputConfirmPassword(){
+
         JSONObject requestBody = new JSONObject();
         requestBody.put("currentPassword", "siahaan12345");
         requestBody.put("newPassword", "siahaan123");
 
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .contentType("application/json")
                 .body(requestBody.toString())
                 .put(userInputValidEndpointWithValidIDToChangesPassword()).then().statusCode(400);

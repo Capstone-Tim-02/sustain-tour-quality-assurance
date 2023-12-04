@@ -13,14 +13,14 @@ public class User_CancelTicketBooking {
 
     @Step("User input endpoint with valid invoice number to cancel booking ticket")
     public String userInputEndpointWIthValidInvoiceNumberToCancelTicket(){
-        return url + "user/ticket/1701419139-772";
+        return url + "user/ticket/1701681704-480";
     }
 
     @Step("User request with HTTP method DELETE to cancel booking ticket and click Send Button")
     public void userRequestWithHTTPMethodDELETEToCancelBookingTicket(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .delete(userInputEndpointWIthValidInvoiceNumberToCancelTicket()).then().statusCode(200);
     }
 
@@ -55,7 +55,7 @@ public class User_CancelTicketBooking {
     public void userRequestWithDELETEHTTPMethodToCancelBookingTicket(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .delete(userInputEndpointWithInvalidInvoiceNumberToCancelTicket()).then().statusCode(404);
     }
 
@@ -97,7 +97,7 @@ public class User_CancelTicketBooking {
     public void userRequestDELETEHTTPMethodToCancelBookingTicket(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .delete(userInputEndpointWithValidInvoiceNumberButHasBeenCanceledBefore()).then().statusCode(400);
     }
 

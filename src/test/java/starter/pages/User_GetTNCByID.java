@@ -22,7 +22,7 @@ public class User_GetTNCByID {
     public void userRequestWithHTTPMethodGETAndInputValidIDToGetTNCWithAuthorization(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .get(userInputEndpointWithValidIDToGetTNC()).then().statusCode(200);
     }
 
@@ -75,7 +75,7 @@ public class User_GetTNCByID {
     public void userRequestWithGetHTTPMethodAndInputInvalidIDToGetTNC(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .get(userInputEndpointWithInvalidIDToGetTNC()).then().statusCode(404);
     }
 

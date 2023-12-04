@@ -4,7 +4,7 @@ Feature: User - Get Point User
   I want to get point
   So that I can see detail of my point
 
-  @GetPoinUser @TC_AA_User_71
+  @GetPointUser @TC_AA_User_71
   Scenario: Get Point User (TC_AA_User_71) - Verify success to get point user with valid endpoint
     Given User input valid endpoint to get point user
     When User request with HTTP method GET to get point user and click Send Button

@@ -21,7 +21,7 @@ public class User_GetHistoryBookingByInvoiceNumber {
     public void userRequestWithTheHTTPMethodGETToGetHistoryBookingWisataCaseSuccessTransaction(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .get(userInputEndpointWithValidInvoiceNumberCaseSuccessTransaction()).then().statusCode(200);
     }
 
@@ -50,7 +50,7 @@ public class User_GetHistoryBookingByInvoiceNumber {
     public void userRequestWithTheHTTPMethodGETToGetHistoryBookingWisataCasePendingTransaction(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .get(userInputEndpointWithValidInvoiceNumberCasePendingTransaction()).then().statusCode(200);
     }
 
@@ -90,7 +90,7 @@ public class User_GetHistoryBookingByInvoiceNumber {
     public void userRequestWithTheHTTPMethodGETToGetHistoryBookingWisataCaseCanceledTransaction(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .get(userInputEndpointWithValidInvoiceNumberCaseCanceledTransaction()).then().statusCode(200);
     }
 
@@ -120,7 +120,7 @@ public class User_GetHistoryBookingByInvoiceNumber {
     public void userRequestWithTheHTTPMethodGETAndInputInvalidInvoiceNumber(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .get(userInputEndpointWithInvalidInvoiceNumberToGetHistoryBooking()).then().statusCode(200);
     }
 

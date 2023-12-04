@@ -22,7 +22,7 @@ public class User_GetDataWisataByID {
     public void userRequestWithTheHTTPMethodGETToGetDataWisata(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .get(userInputEndpointWithValidIDToGetWisataData()).then().statusCode(200);
     }
 
@@ -48,7 +48,7 @@ public class User_GetDataWisataByID {
     public void userRequestWithTheHTTPMethodGETAndInputInvalidIDToGetDataWisata(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .get(userInputEndpointWithInvalidIDToGetDataWisata()).then().statusCode(404);
     }
 

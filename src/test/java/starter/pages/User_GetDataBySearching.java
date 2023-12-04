@@ -26,7 +26,7 @@ public class User_GetDataBySearching {
     public void userRequestWithHTTPMethodGETAndInputTitleThatHasTheResultSearching(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .get(userInputValidEndpointToGetWisataDataBySearchingTheTitle()).then().statusCode(200);
     }
 
@@ -52,7 +52,7 @@ public class User_GetDataBySearching {
     public void userRequestWithHTTPMethodGETAndInputTitleWhereDoesnotResult(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .get(userInputValidEndpointToGetWisataDataEvenThoughTheTitleSearchedWillNotHaveResult()).then().statusCode(200);
     }
 
@@ -85,7 +85,7 @@ public class User_GetDataBySearching {
     public void userRequestWithHTTPMethodGETAndInputCityThatHasTheResultSearching(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .get(userInputValidEndpointToGetWisataDataBySearchingTheCity()).then().statusCode(200);
     }
 
@@ -119,7 +119,7 @@ public class User_GetDataBySearching {
     public void userRequestWithHTTPMethodGETAndInputCityWhereDoesnotResult(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .get(userInputValidEndpointToGetWisataDataEvenThoughTheCitySearchedWillNotHaveResult()).then().statusCode(200);
     }
 
@@ -157,7 +157,7 @@ public class User_GetDataBySearching {
     public void userRequestWithHTTPMethodGETAndInputCategoryNameThatHasTheResultSearching(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .get(userInputValidEndpointToGetWisataDataBySearchingTheCategoryName()).then().statusCode(200);
     }
 
@@ -194,7 +194,7 @@ public class User_GetDataBySearching {
     public void userRequestWithHTTPMethodGETAndInputCategoryNameWhereDoesnotResult(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .get(userInputValidEndpointToGetWisataDataEvenThoughTheCategoryNameSearchedWillNotHaveResult()).then().statusCode(200);
     }
 
@@ -232,7 +232,7 @@ public class User_GetDataBySearching {
     public void userRequestWithHTTPMethodGETAndInputNameOfPromoThatHasTheResultSearching(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .get(userInputValidEndpointToGetPromoDataBySearchingTheName()).then().statusCode(200);
     }
 
@@ -269,7 +269,7 @@ public class User_GetDataBySearching {
     public void userRequestWithHTTPMethodGETAndInputNamePromoWhereDoesnotResult(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .get(userInputValidEndpointToGetPromoDataEvenThoughTheNameSearchedWillNotHaveResult()).then().statusCode(200);
     }
 
@@ -307,7 +307,7 @@ public class User_GetDataBySearching {
     public void userRequestWithHTTPMethodGETAndInputNameOfCategoriesThatHasTheResultSearching(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .get(userInputValidEndpointToGetCategoryDataBySearchingTheName()).then().statusCode(200);
     }
 
@@ -345,7 +345,7 @@ public class User_GetDataBySearching {
     public void userRequestWithHTTPMethodGETAndInputNameCategoryWhereDoesnotResult(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .get(userInputValidEndpointToGetCategoryDataEvenThoughTheNameSearchedWillNotHaveResult()).then().statusCode(200);
     }
 

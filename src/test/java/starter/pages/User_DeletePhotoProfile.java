@@ -20,7 +20,7 @@ public class User_DeletePhotoProfile {
     public void userRequestWithTheHTTPMethodDELETEToDeletePhotoProfile(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .delete(userInputEndpointWithValidIDToDeletePhotoProfile()).then().statusCode(200);
     }
 
@@ -54,7 +54,7 @@ public class User_DeletePhotoProfile {
     public void userRequestWithTheHTTPMethodDELETEAndInputInvalidIDToDeletePhotoProfile(){
         SerenityRest
                 .given()
-                .header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InB1dHJpc2huMjciLCJleHAiOjE3MDE1MjI2NTYsImlhdCI6MTcwMDMxMzA1Nn0.LYnOXCXkHqrC5bjMMg-h9SO5MIZSBSJD3PVcRsG58AU")
+                .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .delete(userInputEndpointWithInvalidIDToDeletePhotoProfile()).then().statusCode(404);
     }
 

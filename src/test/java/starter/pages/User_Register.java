@@ -99,10 +99,10 @@ public class User_Register {
     public void userRequestPOSTMethodAndInputEmailAlreadyExists(){
         JSONObject requestBody = new JSONObject();
         requestBody.put("name", "Ana Siahaan");
-        requestBody.put("username", "putrishn273");
+        requestBody.put("username", "putrishn27345");
         requestBody.put("password", "siahaan123");
         requestBody.put("confirm_password", "siahaan123");
-        requestBody.put("email", "ruthputri135@gmail.com");
+        requestBody.put("email", "ruthputri13531@gmail.com");
         requestBody.put("phone_number", "085260892703");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(userInputValidEndpointToCreateAccount());
@@ -133,10 +133,10 @@ public class User_Register {
     public void userRequestPOSTMethodAndInputPhoneNumberAlreadyExists(){
         JSONObject requestBody = new JSONObject();
         requestBody.put("name", "Ana Siahaan");
-        requestBody.put("username", "putrishn273");
+        requestBody.put("username", "putrishn27345");
         requestBody.put("password", "siahaan123");
         requestBody.put("confirm_password", "siahaan123");
-        requestBody.put("email", "ruthputri123@gmail.com");
+        requestBody.put("email", "ruthputri12321@gmail.com");
         requestBody.put("phone_number", "085260892711");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(userInputValidEndpointToCreateAccount());
