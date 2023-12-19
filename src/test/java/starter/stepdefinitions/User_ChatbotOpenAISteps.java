@@ -22,12 +22,14 @@ public class User_ChatbotOpenAISteps {
     @When("User request with HTTP method POST with valid message related to travel questions and click Send Button")
     public void userRequestWithHTTPMethodPOSTWithValidMessageRelatedToTravelQuestionsAndClickSendButton() {
         chatbotOpenAI.userRequestWithHTTPMethodPOSTWithValidMessageRelatedToTravelQuestions();
+        chatbotOpenAI.waitForSomeTime(3);
 
     }
 
     @Then("Validate success to get recommendation about destination and display detail data answer from chatbot")
     public void validateSuccessToGetRecommendationAboutDestinationAndDisplayDetailDataAnswerFromChatbot() {
         chatbotOpenAI.successToGetRecommendationAboutDestination();
+        chatbotOpenAI.waitForSomeTime(3);
     }
 
 

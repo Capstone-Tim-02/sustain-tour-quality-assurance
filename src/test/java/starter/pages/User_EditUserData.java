@@ -23,7 +23,7 @@ public class User_EditUserData {
         SerenityRest.given()
                 .contentType("multipart/form-data")
                 .multiPart("name", "Putri Ruth Berliana Siahaan")
-                .multiPart("category_kesukaan", "pantai")
+                .multiPart("category_kesukaan", "Wisata Alam")
                 .multiPart("profile_image", new File("src/test/resources/foto/profile.jpg"), "image/jpeg")
                 .header("Authorization", "Bearer " + Token_Authentication.authToken)
                 .put(userInputValidEndpointWithValidIDToEditUserData());

@@ -31,6 +31,21 @@ public class User_ChatbotOpenAI {
                 .contentType("application/json")
                 .body(requestBody.toString())
                 .post(userInputValidEndpointToAskSomethingInChatbotOpenAI()).then().statusCode(200);
+
+    }
+
+    @Step
+    public void waitForSomeTime(int seconds) {
+        // Menunggu beberapa detik
+        waitABit(seconds * 1000);
+    }
+
+    private void waitABit(int milliseconds) {
+        try {
+            Thread.sleep(milliseconds);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @Step("Validate success to get recommendation about destination and display detail data answer from chatbot")

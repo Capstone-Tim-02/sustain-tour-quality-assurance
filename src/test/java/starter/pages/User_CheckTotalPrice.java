@@ -25,7 +25,7 @@ public class User_CheckTotalPrice {
         JSONObject requestBody = new JSONObject();
         requestBody.put("wisata_id", 2);
         requestBody.put("use_all_points", true);
-        requestBody.put("kode_voucher", "liburan15");
+        requestBody.put("kode_voucher", "NEWYEAR");
         requestBody.put("quantity", 3);
         requestBody.put("checkin_booking", "2023-12-27");
 
@@ -294,7 +294,7 @@ public class User_CheckTotalPrice {
     public void userRequestWithPOSTHTTPMethodAndDidNotInputUseAllPointsToCheckPrice(){
         JSONObject requestBody = new JSONObject();
         requestBody.put("wisata_id", 3);
-        requestBody.put("kode_voucher", "liburan15");
+        requestBody.put("kode_voucher", "NEWYEAR");
         requestBody.put("quantity", 5);
         requestBody.put("checkin_booking", "2023-12-27");
 

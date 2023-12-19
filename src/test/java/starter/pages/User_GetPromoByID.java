@@ -16,7 +16,7 @@ public class User_GetPromoByID {
 
     @Step("User input endpoint with valid ID to get promo")
     public String userInputEndpointWithValidIDToGetPromo(){
-        return url + "user/promo/17";
+        return url + "user/promo/145";
     }
 
     @Step("User request with the HTTP method GET to get data promo and click Send Button")
